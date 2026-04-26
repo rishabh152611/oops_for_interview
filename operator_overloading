@@ -1,0 +1,30 @@
+///////////
+VERY VERY VERY IMPORTANT
+
+
+#include<bits/stdc++.h>
+using namespace std;
+class A{
+    private:
+    int weight;
+    public:
+    A (int x=0 ){
+        weight =x;
+    }
+    void PrintVal(){
+        cout<<"the weight is : "<<weight;
+    }
+    A operator+(A w){
+        A temp ;
+        temp.weight=weight+w.weight;
+        return temp;
+    }
+};
+int main(){
+    A person1(89);
+    A person2(99);
+    A total ;
+    total = person1+person2;
+    total.PrintVal();
+    
+}

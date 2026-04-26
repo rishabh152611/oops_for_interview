@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+class base{
+    public:
+    void msg(){
+        cout<<"base class"<<endl;
+    }
+};
+class derived :public base{
+    public:
+    void msg(){
+        cout<<"derived class"<<endl;
+    }
+}; 
+int main(){
+    base b;
+    b.msg();
+    derived d;
+    d.msg();
+}
+///output: 
+base clase
+derived class

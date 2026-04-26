@@ -1,0 +1,2 @@
+isA relation uses inheritance and expoes all objects of base class, compile time , static: all objects of base class are called at once
+hasA relation uses objects which are required without exposing all the objects , run time,dynamic : what obj needes to be used can be taken

@@ -21,3 +21,39 @@ int main(){
 ///output: 
 base clase
 derived class
+
+
+
+
+
+
+
+
+
+//////what if we want call the function of base class in derived class without getting overried
+#include<bits/stdc++.h>
+using namespace std;
+class base{
+    public:
+    void msg(){
+        cout<<"base class"<<endl;
+    }
+};
+class derived :public base{
+    public:
+    void msg(){
+        cout<<"derived class"<<endl;
+    }
+base::msg();
+}; 
+int main(){
+    base b;
+    b.msg();
+    derived d;
+    d.msg();
+}
+
+output:
+base class
+derived class
+base class

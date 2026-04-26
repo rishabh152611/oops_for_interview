@@ -83,3 +83,36 @@ int main(){
     return 0;
 }
 
+
+
+
+
+/////////COPY CONSTRUCTOR
+
+#include<bits/stdc++.h>
+using namespace std;
+class Person{
+    private:
+    int age;
+    string name;
+    float height;
+    public:
+    Person(string a_name,int a_age,float a_height){
+        name=a_name;
+        height=a_height;
+        age = a_age;
+        
+    }
+    void getData(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<height<<endl;
+    }
+    
+};
+int main(){
+    Person obj1("rishabh", 24,5.10);
+.//////this is the point of differcene
+    Person obj2(obj1);
+    obj2.getData();
+}

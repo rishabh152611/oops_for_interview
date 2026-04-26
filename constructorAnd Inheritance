@@ -1,0 +1,23 @@
+//constructor and inheritance
+#include<bits/stdc++.h>
+using namespace std;
+class base{
+    public:
+    base(){
+        cout<<"base class constructor called"<<endl;
+    }
+    base(int x){
+        cout<<"paramaterized base class contructor called: "<<x<<endl;
+    }
+};
+class derived :public base{
+ 
+};
+int main(){
+       derived d;
+    derived d1(9);
+}
+
+/*output: 
+base class constructor called
+paramaterized base class contructor called:9*/

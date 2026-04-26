@@ -1,0 +1,31 @@
+class Person {
+private:
+    string name;
+    int age;
+    float height;
+
+public:
+    Person() {
+        name = "rishabh";
+        age = 24;
+        height = 5.10;
+    }
+
+    Person(string name_a) {
+        name = name_a;
+        age = 24;
+        height = 5.10;
+    }
+
+    Person(string name_a, int age_a, float height_a) {
+        name = name_a;
+        age = age_a;
+        height = height_a;
+    }
+
+    void getData() {
+        cout << name << endl;
+        cout << age << endl;
+        cout << height << endl;
+    }
+};

@@ -1,4 +1,3 @@
-//constructor practive
 #include<bits/stdc++.h>
 using namespace std;
 class PhoneDetails{
@@ -14,6 +13,12 @@ class PhoneDetails{
         processor=processor_a;
         battery=batter_a;
     }
+    PhoneDetails(PhoneDetails&customer1){
+        name = customer1.name;
+        ram = customer1.ram;
+        processor=customer1.processor;
+        battery=customer1.battery;
+    }
     void getData(){
         cout<<name<<endl;
         cout<<ram<<endl;
@@ -26,5 +31,6 @@ class PhoneDetails{
 };
 int main(){
     PhoneDetails customer1("anshika",8,"snapdragon",81.3);
-   customer1.getData();
+    PhoneDetails customer2(customer1);
+   customer2.getData();
 }

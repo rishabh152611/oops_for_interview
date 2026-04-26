@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+class rectangle{
+   public:
+   int len;
+   int wid;
+   void area(){
+       cout<<len*wid<<endl;
+   }
+};
+class cuboid : public rectangle{
+  public:
+  int height;
+  void vol(){
+      cout<<len*wid*height;
+  }
+};
+int main(){
+   
+  
+    cuboid c;
+      c.len=10;
+    c.wid=20;
+    c.height=30;
+    c.area();
+    c.vol();
+}

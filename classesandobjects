@@ -1,4 +1,5 @@
 //getters 
+//this is actually constructors
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,4 +17,35 @@ class A{
 int main(){
     A a_obj(28);
     cout<< a_obj.getData();
+}
+
+
+
+//types of constructor
+ //implementation of non parametrised constructor
+#include<bits/stdc++.h>
+using namespace std;
+class Person{
+    private: 
+    string name;
+    int age;
+    float height;
+    //initilizing values to member variables using non parametrized constructor
+    //constructor has same name as the class
+   public:
+    Person(){
+        name="of";
+        age=0;
+        height=0.0f;
+    }
+    int getData(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<height<<endl;
+    }
+};
+int main(){
+    Person obj;
+    obj.getData();
+    return 0;
 }

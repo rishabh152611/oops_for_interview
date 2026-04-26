@@ -1,7 +1,7 @@
 ///////////
 VERY VERY VERY IMPORTANT
 
-
+//OVERLOADING OF+ OPERATOR
 #include<bits/stdc++.h>
 using namespace std;
 class A{
@@ -28,3 +28,54 @@ int main(){
     total.PrintVal();
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/./.......//..//../../../..
+OVERLOADING OF ++a a++ PREINCREENT OPERATOR
+
+#include<bits/stdc++.h>
+using namespace std;
+class Person{
+    private:
+    int weight;
+    public:
+    Person(int x =0){
+        weight = x;
+        
+    }
+    void printVal(){
+        cout<<"preincremented weight is : "<<weight<<endl;
+        cout<<"postincremeneted weight is : "<<weight<<endl;
+    }
+    //overloading preincrement
+    void operator ++(){
+        ++weight;
+    }
+    //overloading postincremenet
+    void operator++(int){
+        ++weight;
+    }
+};
+int main(){
+    Person jon(64);
+    ++jon;
+    jon.printVal();
+    jon++;
+    
+}
+

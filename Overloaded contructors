@@ -1,3 +1,4 @@
+//OVERLOADING OF + OPERATOR
 class Person {
 private:
     string name;
@@ -29,3 +30,29 @@ public:
         cout << height << endl;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

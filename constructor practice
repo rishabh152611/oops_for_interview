@@ -1,0 +1,30 @@
+//constructor practive
+#include<bits/stdc++.h>
+using namespace std;
+class PhoneDetails{
+    private:
+    string name;
+    int ram;
+    string processor;
+    float battery;
+    public:
+    PhoneDetails(string name_a,int ram_a,string processor_a,float batter_a){
+        name = name_a;
+        ram= ram_a;
+        processor=processor_a;
+        battery=batter_a;
+    }
+    void getData(){
+        cout<<name<<endl;
+        cout<<ram<<endl;
+        cout<<processor<<endl;
+        cout<<battery<<endl;
+        
+        
+    }
+    
+};
+int main(){
+    PhoneDetails customer1("anshika",8,"snapdragon",81.3);
+   customer1.getData();
+}
